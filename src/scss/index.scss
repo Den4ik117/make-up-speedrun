@@ -6,4 +6,83 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: #091133;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    height: 100dvh;
+    width: 100%;
+}
+
+.people {
+    height: 100vh;
+
+    .people__image {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    max-width: 675px;
+    justify-self: center;
+}
+
+.lead {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .lead__header {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .lead__text {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #6f7cb2;
+    }
+}
+
+.blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    .blocks__item {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .blocks__icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .blocks__title {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+
+    .blocks__text {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #5d6970;
+    }
+
 }

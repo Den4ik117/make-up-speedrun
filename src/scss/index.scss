@@ -6,4 +6,92 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: #091133;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+
+.container {
+    position: relative;
+    max-width: 1160px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    max-width: 520px;
+}
+
+.lead {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .lead__header {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .lead__text {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #6f7cb2;
+    }
+}
+
+.blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    .blocks__item {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .blocks__icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .blocks__title {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+
+    .blocks__text {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #5d6970;
+    }
+
+}
+
+.phone {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 492px;
+
+    .phone__image {
+        width: 100%;
+        height: auto;
+    }
 }
